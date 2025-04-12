@@ -9,17 +9,17 @@ class StringBuilder {
     getValue() {
         return this.#value;
     }
-
+// Додає рядок в кінець 
     padEnd(str) {
-
+        this.#value = this.#value + str;
     }
-
+// Додає рядок на початок 
     padStart(str) {
-
+        this.#value = str + this.#value;
     }
-
+// Додає рядок на початок в кінець 
     padBoth(str) {
-
+        this.#value = str + this.#value + str;
     }
 }
 
